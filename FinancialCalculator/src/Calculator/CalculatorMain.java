@@ -48,10 +48,10 @@ public class CalculatorMain {
 			            	bg1.setNumberOfPayments(numberOfPayments);
 			            	bg1.setPaymentAmount(paymentAmount);
 			            	
-			            	System.out.println(bg1.PresentValuePB(interestRate, numberOfPayments, futureValue, paymentAmount));
-			            	System.out.println(bg1.FutureValuePB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
-			            	System.out.println(bg1.NumberOfPeriodPB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
-			            	System.out.println(bg1.PaymentAmountPB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
+			            	System.out.println("Present Value   :" +BeginningCalculator.PresentValuePB(interestRate, numberOfPayments, futureValue, paymentAmount));
+			            	System.out.println("Future Value    :" +BeginningCalculator.FutureValuePB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
+			            	System.out.println("Number of Period:" +BeginningCalculator.NumberOfPeriodPB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
+			            	System.out.println("Payment Amount  :" +BeginningCalculator.PaymentAmountPB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
 			            	
 			                break;
 			            case 2:
@@ -61,12 +61,15 @@ public class CalculatorMain {
 			            	eg1.setNumberOfPayments(numberOfPayments);
 			            	eg1.setPaymentAmount(paymentAmount);
 			            	
-			            	
+			            	System.out.println("Present Value   :" +EndingCalculator.PresentValuePB(interestRate, numberOfPayments, futureValue, paymentAmount));
+			            	System.out.println("Future Value    :" + EndingCalculator.FutureValuePB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
+			            	System.out.println("Number of Period:" +EndingCalculator.NumberOfPeriodPB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
+			            	System.out.println("Payment Amount  :" + EndingCalculator.PaymentAmountPB(interestRate, numberOfPayments, futureValue, paymentAmount, presentValue));
 			            	break;
 			       
 			            default: 
 			        }
-			    
+			   
 
 
 			
